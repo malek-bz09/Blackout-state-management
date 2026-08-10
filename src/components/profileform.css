@@ -1,0 +1,65 @@
+.form-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+.form-card h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0f172a;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.field {
+  flex: 1;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.field input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #5b4dff;
+}
+
+.form-row button {
+  height: 56px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #6d5dfc,
+    #4f46e5
+  );
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.form-row button:hover {
+  transform: translateY(-2px);
+}
