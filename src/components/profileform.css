@@ -4,10 +4,12 @@
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   margin-bottom: 40px;
+
 }
 
 .form-card h2 {
   font-size: 2rem;
+
   margin-bottom: 30px;
   color: #0f172a;
 }
@@ -25,7 +27,6 @@
 .field label {
   display: block;
   margin-bottom: 10px;
-  font-weight: 600;
   color: #334155;
 }
 
