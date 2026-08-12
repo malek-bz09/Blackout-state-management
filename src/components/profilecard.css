@@ -51,3 +51,19 @@
   color: white;
   cursor: default;
 }
+
+.profile-card button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 12px;
+  background: #be1414;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.profile-card button:hover {
+  transform: translateY(-2px);
+}

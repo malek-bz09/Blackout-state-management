@@ -1,4 +1,5 @@
 import "./profilecard.css";
+
 function ProfileCard(props) {
   return (
     <div className="profile-card">
@@ -15,6 +16,11 @@ function ProfileCard(props) {
           </span>
         ))}
       </div>
+      
+     
+        <button onClick={() => props.onDelete(props.profile.id)}> Delete </button>
+    
+
     </div>
   );
 }

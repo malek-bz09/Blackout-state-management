@@ -4,11 +4,15 @@ import Addcard from './components/profileform.jsx'
 import './App.css'
 
 function App() {
+ const [profiles, setProfiles] = useState([]);
 
-
-const [profiles, setProfiles] = useState([]);
-
-
+  function deleteProfile(id) {
+    setProfiles(
+      profiles.filter(profile => profile.id !== id)
+    );
+  }
+  
+ 
   return(
   <section className="app">
 
@@ -20,7 +24,7 @@ const [profiles, setProfiles] = useState([]);
    setProfiles={setProfiles} 
    />
 
-   <ProfileList profiles= {profiles} />
+   <ProfileList profiles= {profiles} onDelete={deleteProfile} />
 
   </section>
   );

@@ -7,6 +7,7 @@ function ProfileList(props) {
         <ProfileCard
           key={profile.id}
           profile={profile}
+          onDelete={props.onDelete}
         />
       ))}
     </div>
