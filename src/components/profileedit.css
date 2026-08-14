@@ -1,0 +1,74 @@
+.edit-form-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  border-top: 5px solid #f59e0b;
+}
+
+.edit-form-card h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0f172a;
+}
+
+.edit-form-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.field {
+  flex: 1;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 10px;
+  color: #334155;
+  font-weight: 500;
+}
+
+.field input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+.edit-form-row button {
+  height: 56px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #d97706
+  );
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.edit-form-row button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.25);
+}
+
+.edit-form-row button:active {
+  transform: translateY(0);
+}

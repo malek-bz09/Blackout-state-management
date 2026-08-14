@@ -1,27 +1,29 @@
 .profile-card {
-  background: rgb(250, 247, 247);
-  border-radius: 20px;
-  padding: 25px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eef2f7;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
   transition: all 0.3s ease;
-  border: 1px solid #ececec;
 }
 
 .profile-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
 }
 
 .profile-card h2 {
   margin: 0;
-  font-size: 1.8rem;
-  color: #1a1a40;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .role {
-  margin-top: 10px;
-  font-size: 1.1rem;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-size: 1rem;
   font-weight: 600;
   color: #5b4dff;
 }
@@ -30,40 +32,91 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #e8e8e8;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
 }
 
 .skill {
   background: #eef2ff;
-  color: #4f46e5;
-  padding: 8px 14px;
+  color: #4338ca;
+  padding: 10px 16px;
   border-radius: 999px;
   font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: all 0.25s ease;
 }
 
 .skill:hover {
   background: #5b4dff;
   color: white;
-  cursor: default;
+  transform: scale(1.05);
 }
 
-.profile-card button {
-  padding: 10px 30px;
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.card-actions button {
+  min-width: 110px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card-actions button:hover {
+  transform: translateY(-3px);
+}
+
+.delete-btn {
+    height: 30px;
+  padding: 0 30px;
   border: none;
   border-radius: 12px;
-  background: #be1414;
+  background: linear-gradient(
+    135deg,
+    #ef4444,
+    #dc2626);
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+
+}
+
+.delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(220, 38, 38, 0.25);
+}
+
+.edit-btn {
+    height: 30px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4f46e5
+  );
+  color: white;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
 }
 
-.profile-card button:hover {
+.edit-btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
 }

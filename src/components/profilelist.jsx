@@ -8,6 +8,7 @@ function ProfileList(props) {
           key={profile.id}
           profile={profile}
           onDelete={props.onDelete}
+          onEdit={props.onEdit}
         />
       ))}
     </div>
