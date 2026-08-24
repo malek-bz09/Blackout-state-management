@@ -14,12 +14,14 @@
   padding: 20px;
 }
 
-.navbar {
-  background-color: rgb(12, 26, 87);
-  color: aliceblue;
-  padding: 2rem;
-  margin:0%;
+.theme-light {
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 
+.theme-dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
 
 

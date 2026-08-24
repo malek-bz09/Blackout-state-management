@@ -2,6 +2,7 @@ import "./profilecard.css";
 import { useState } from "react";
 import Editcard from "./profileedit";
 
+
 function ProfileCard(props) {
   const [isEditing, setIsEditing] = useState(false);
 
@@ -26,7 +27,7 @@ function ProfileCard(props) {
 
         <button className="edit-btn" onClick={() => setIsEditing(true)}> Edit </button>
 
-        {isEditing && (
+  {isEditing && (
   <Editcard
     profile={props.profile}
     onEdit={props.onEdit}
