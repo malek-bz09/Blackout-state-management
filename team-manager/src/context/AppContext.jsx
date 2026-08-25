@@ -1,4 +1,5 @@
 import { createContext, useState } from "react"
+
 const AppContext = createContext()
 
 function AppProvider({ children }) {
@@ -6,7 +7,7 @@ function AppProvider({ children }) {
 
   return (
     <AppContext.Provider value={{ theme, setTheme }}>
-      <div className={theme === "light" ? "theme-light" : "theme-dark"}>
+      <div className={theme === "light" ? "app-wrapper app-light" : "app-wrapper app-dark"}>
         {children}
       </div>
     </AppContext.Provider>

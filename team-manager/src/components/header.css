@@ -1,6 +1,55 @@
-header {
-  background-color: rgb(12, 26, 87);
-  color: aliceblue;
-  padding: 2rem;
-  margin:0%;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-light {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-dark {
+  background-color: #0a1a3a;
+  color: #ffffff;
+  border-bottom: 1px solid #16264d;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.theme-toggle {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-light {
+  background-color: #f7f9fc;
+  color: #1a1a1a;
+}
+
+.app-dark {
+  background-color: #050d1f;
+  color: #e2e8f0;
 }
